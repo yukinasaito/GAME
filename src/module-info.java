@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author saito
+ *
+ */
+module GAME {
+}
