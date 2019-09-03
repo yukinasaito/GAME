@@ -5,4 +5,4 @@
  * @author saito
  *
  */
-package カード;
+package main;
