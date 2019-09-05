@@ -17,4 +17,5 @@ public class Card {
 	public Mark getMark() {
 		return mark;
 	}
+
 }

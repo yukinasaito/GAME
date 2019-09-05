@@ -30,7 +30,14 @@ public class Deck {
 	}
 
 	public Card draw() {
-		return null;
+		Card card = null;
+		if(cards.size() > 0) {
+			int index = cards.size() - 1;
+			card = cards.get(index);
+			cards.remove(index);
+		}
+		return card;
+
 	}
 
 }
