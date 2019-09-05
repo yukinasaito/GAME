@@ -10,12 +10,34 @@ public class Card {
 		this.number = number;
 	}
 
-	public int getNumber() {
+	public int getNumber1() {
 		return number;
 	}
 
 	public Mark getMark() {
 		return mark;
+	}
+
+	public String getNumber2() {
+		String suit;
+		switch (number) {
+		case 11:
+			suit = "ジャック";
+			break;
+		case 12:
+			suit = "クイーン";
+			break;
+		case 13:
+			suit = "キング";
+			break;
+		case 1:
+			suit = "エース";
+			break;
+		default:
+			suit = Integer.toString(number);
+			break;
+		}
+		return suit;
 	}
 
 }

@@ -9,14 +9,15 @@ public class rum {
 
 		Card card1 = new Card(Mark.CLOVER, 13);
 		Card card2 = new Card(Mark.CLOVER, 13);
-		System.out.println(card2.getNumber());
+		System.out.println(card2.getNumber1());
 		System.out.println(card2.getMark());
 
 		Deck deck = new Deck();
 		deck.shuffle();
 
 		Card card3 = deck.draw();
-		System.out.println(card3.getNumber());
+		System.out.println(card3.getNumber1());
 		System.out.println(card3.getMark());
 	}
+
 }
