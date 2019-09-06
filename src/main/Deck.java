@@ -23,7 +23,9 @@ public class Deck {
 			}
 			int jokers = 0;
 			for(int i = 0; i < jokers; i++) {
-				cards.add(new Card(Mark.JOKER, 14));
+				Card card = (new Card(Mark.JOKER, 14));
+				cards.add(card);
+
 			}
 		});
 
