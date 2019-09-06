@@ -10,6 +10,11 @@ public class Card {
 		this.number = number;
 	}
 
+	public static Card createJoker() {
+		return new Card(Mark.JOKER, 14);
+
+	}
+
 	public int getNumber1() {
 		return number;
 	}
@@ -19,25 +24,25 @@ public class Card {
 	}
 
 	public String getNumber2() {
-		String suit;
+		String sheet;
 		switch (number) {
 		case 11:
-			suit = "ジャック";
+			sheet = "ジャック";
 			break;
 		case 12:
-			suit = "クイーン";
+			sheet = "クイーン";
 			break;
 		case 13:
-			suit = "キング";
+			sheet = "キング";
 			break;
 		case 1:
-			suit = "エース";
+			sheet = "エース";
 			break;
 		default:
-			suit = Integer.toString(number);
+			sheet = Integer.toString(number);
 			break;
 		}
-		return suit;
+		return sheet;
 	}
 
 }

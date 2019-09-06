@@ -21,7 +21,12 @@ public class Deck {
 				Card card = new Card(mark, number);
 				cards.add(card);
 			}
+			int jokers = 0;
+			for(int i = 0; i < jokers; i++) {
+				cards.add(new Card(Mark.JOKER, 14));
+			}
 		});
+
 	}
 
 	public void shuffle() {
@@ -42,4 +47,5 @@ public class Deck {
 	public void put(Card card) {
 
 	}
+
 }
