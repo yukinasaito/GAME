@@ -18,6 +18,10 @@ public class rum {
 		Card card3 = deck.draw();
 		System.out.println(card3.getNumber1());
 		System.out.println(card3.getMark());
+	}
+
+	public static int deck(String[] args) {
+		return 52;
 
 	}
 }
